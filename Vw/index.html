@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meus VW favoritos</title>
+    <link rel="stylesheet" href="/src/css/estilo.css">
+</head>
+
+<body>
+    <header class="topo">
+        <h1>Meus VW favoritos!!</h1>
+        <div class="topo-logo">
+            <img src="/src/img/assets/teste1.png" alt="Logo">
+        </div>
+
+        <!-- Menu de navegação -->
+        <nav>
+            <ul>
+                <li><a href="#home">Início</a></li>
+                <li><a href="#carros">Carros</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="home">
+        <article>
+            <h2>Sejam bem vindos a minha garagem! </h2>
+            <p>Mais do que uma marca, a Volkswagen representa uma fusão entre tecnologia, tradição e emoção. Este blog é
+                um ponto de encontro para entusiastas que enxergam em cada modelo muito mais que um meio de transporte
+                mas uma extensão do estilo de vida e da paixão por dirigir.</p>
+        </article>
+
+        <aside>
+            <h3>Alguns dos nossos carros</h3>
+            <ul>
+                <li><a href="https://www.vw.com.br/pt.html#Golf" target="_blank">Golf Tsi 2025</a></li>
+                <li><a href="https://www.vw.com.br/pt.html#Tiguan" target="_blank">Tiguan</a></li>
+                <li><a href="https://www.vw.com.br/pt.html#Passat" target="_blank">Passat</a></li>
+            </ul>
+        </aside>
+
+        <div class="section-img">
+            <p>Veja abaixo uma galeria de imagens com alguns dos carros mais lindos da Volkswagen:</p>
+
+            <!-- Galeria de carros -->
+            <img src="/src/img/assets/vw1.png" alt="Golf" class="galeria-img">
+            <img src="/src/img/assets/vw2.png" alt="Tiguan" class="galeria-img">
+            <img src="/src/img/assets/vw3.png" alt="Golf" class="galeria-img">
+            <img src="/src/img/assets/vw4.png" alt="Tiguan" class="galeria-img">
+            <img src="/src/img/assets/2025-volkswagen-golf-gti-autobahn-586-688d0ac683047.avif" alt="Passat" class="galeria-img">
+            <img src="/src/img/assets/vw-passat-review-2024-01-front-tracking.jpg" alt="Golf R" class="galeria-img">
+        </div>
+
+
+        <!-- Formulário de contato -->
+        <section id="contato">
+            <h2>Formulário de contato</h2>
+            <form id="contactForm">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+
+        <!-- Formulário de comentarios -->
+        <section id="comentarios">
+            <h2>Comentarios</h2>
+            <form id="comentariosForm">
+                <label for="comentario">Deixe seus comentários:</label>
+                <textarea id="comentario" name="comentario" required></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+            <ul id="comentarios"></ul>
+        </section>
+    </main>
+
+
+    <!-- lightbox refente a galeria -->
+    <div id="lightbox" class="lightbox">
+        <span class="fechar">&times;</span>
+        <img class="lightbox-img" src="" alt="">
+    </div>
+
+    <script src="/src/js/scripit.js/script.js"></script>
+
+    <footer>
+        <p>&copy; 2025 Meus VW favoritos. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+
+</html>
